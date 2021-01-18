@@ -13,14 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+const bounds = {
+  north: 85,
+  south: -85,
+  west: -180,
+  east: 180,
+};
 function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
     {
       mapId: "d88f2bc4088faea",
       center: { lat: 25, lng: 33 },
-      zoom: 4,
+      zoom: 8,
+      restriction: {
+        latLngBounds: bounds,
+        strictBounds: true,
+      },
     } as google.maps.MapOptions
   );
   new google.maps.KmlLayer({
