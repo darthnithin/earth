@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-function initMap(): void {
-  const myLatLng = { lat: -25.363, lng: 131.044 };
 
+function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
     {
+      mapId: "d88f2bc4088faea",
+      center: { lat: 25, lng: 33 },
       zoom: 4,
-      center: myLatLng,
-    }
+    } as google.maps.MapOptions
   );
-  const kmllayer = new google.maps.KmlLayer({
-    url:
-      "https://github.com/Nithindanday/parlervideoscraper/blob/master/ParleronehalfKML.kmz?raw=true",
+  const ctaLayer = new google.maps.KmlLayer({
+    url: "https://github.com/Nithindanday/parlervideoscraper/blob/master/ParleronehalfKML.kmz?raw=true",
     map: map,
   });
 }
