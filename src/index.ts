@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
@@ -24,8 +23,9 @@ function initMap(): void {
       zoom: 4,
     } as google.maps.MapOptions
   );
-  const ctaLayer = new google.maps.KmlLayer({
-    url: "https://github.com/Nithindanday/parlervideoscraper/blob/master/ParleronehalfKML.kmz?raw=true",
+  new google.maps.KmlLayer({
+    url:
+      "https://github.com/Nithindanday/parlervideoscraper/blob/master/ParleronehalfKML.kmz?raw=true",
     map: map,
   });
 }
