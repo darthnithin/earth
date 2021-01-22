@@ -1,8 +1,5 @@
-# Google Maps JavaScript API Sample Application
-
-This sample is generated from @googlemaps/js-samples located at
-https://github.com/googlemaps/js-samples.
-
+# Parler Map
+Github pages no longer works as I revoked my Google Maps API Key. If you want it, you have to replace it with you own, along with a map id.
 ## Setup
 
 ```sh
