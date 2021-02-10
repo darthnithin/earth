@@ -1,5 +1,6 @@
 # Parler Map
-Github pages no longer works as I revoked my Google Maps API Key. If you want it, you have to replace it with you own, along with a map id.
+Github pages no longer works as I revoked my Google Maps API Key. If you want it, you have to replace it with you own, along with a map id. 
+If you care/need clarification open an issue
 ## Setup
 
 ```sh
